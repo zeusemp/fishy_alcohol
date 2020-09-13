@@ -4,10 +4,10 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 ESX.RegisterUsableItem('beer', function(source)
     local xPlayer = ESX.GetPlayerFromId(source)
     local randombeer = math.random(1, 10)
-    if randombeer <= 9 then
+    if randombeer <= 7 then
         TriggerClientEvent('rbd_alcohol:beer', source)
         xPlayer.removeInventoryItem('beer', 1)
-    elseif randombeer = 10 then
+    elseif randombeer >= 8 then
         print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
@@ -16,10 +16,10 @@ end)
 ESX.RegisterUsableItem('tequila', function(source)
     local xPlayer = ESX.GetPlayerFromId(source)
     local random = math.random(1, 10)
-    if random <= 9 then
+    if random <= 7 then
         TriggerClientEvent('rbd_alcohol:tequila', source)
         xPlayer.removeInventoryItem('tequila', 1)
-    elseif random == 10 then
+    elseif random >= 8 then
         print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
@@ -31,7 +31,7 @@ ESX.RegisterUsableItem('whisky', function(source)
     if randomwhisky <= 9 then
         TriggerClientEvent('rbd_alcohol:whisky', source)
         xPlayer.removeInventoryItem('whisky', 1)
-    else
+    elseif randomwhisky >= 8 then
         print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
