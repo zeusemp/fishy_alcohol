@@ -8,6 +8,7 @@ ESX.RegisterUsableItem('beer', function(source)
         TriggerClientEvent('rbd_alcohol:beer', source)
         xPlayer.removeInventoryItem('beer', 1)
     elseif randombeer = 10 then
+        print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
 end)
@@ -19,6 +20,7 @@ ESX.RegisterUsableItem('tequila', function(source)
         TriggerClientEvent('rbd_alcohol:tequila', source)
         xPlayer.removeInventoryItem('tequila', 1)
     elseif random == 10 then
+        print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
 end)
@@ -30,6 +32,7 @@ ESX.RegisterUsableItem('whisky', function(source)
         TriggerClientEvent('rbd_alcohol:whisky', source)
         xPlayer.removeInventoryItem('whisky', 1)
     else
+        print('overdosed')
         TriggerClientEvent('rbd_alcohol:overdosed', source)
     end
 end)
