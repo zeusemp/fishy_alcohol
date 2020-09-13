@@ -14,8 +14,6 @@ start fishy-alcohol
 [Dependencies]
 
 ```
-
 Mythic Notify
 es_extended
-
 ```
