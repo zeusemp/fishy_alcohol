@@ -8,12 +8,13 @@
  2- Import fishy-alcohol.sql in your database
  add this to your server.cfg
 ```
-    start fishy-alcohol
+start fishy-alcohol
 ```
 
 [Dependencies]
 
 ```
+
 Mythic Notify
 es_extended
 
